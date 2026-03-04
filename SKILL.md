@@ -14,8 +14,8 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash, AskUserQuestion
 - Дневные логи: `~/.claude/sessions/daily/daily-{YYYY-MM-DD}.md`
 - Архив: `~/.claude/sessions/archive/`
 - CLAUDE.md: `~/.claude/CLAUDE.md`
-- Memory: `~/.claude/projects/-Users-username/memory/`
-- Паттерны: `~/.claude/projects/-Users-username/memory/patterns.md`
+- Memory: `~/.claude/projects/memory/` (автоопределяется по текущему проекту)
+- Паттерны: `~/.claude/projects/memory/patterns.md`
 
 ## Process
 
@@ -48,7 +48,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash, AskUserQuestion
 
 1. **CLAUDE.md** — посчитать строки. Если > 100 строк — флагнуть "CLAUDE.md растет, подумай о выносе в docs/"
 2. **Voice DNA** — проверить `~/.claude/docs/voice-dna.md`. Есть ли обновления за сегодня? Cringe List не переполнен?
-3. **Memory файлы** — `~/.claude/projects/-Users-username/memory/*.md`. Когда последний раз обновлялись? Если > 7 дней — флагнуть
+3. **Memory файлы** — `~/.claude/projects/memory/*.md` (автоопределяется). Когда последний раз обновлялись? Если > 7 дней — флагнуть
 4. **Скиллы** — `~/.claude/skills/*/SKILL.md`. Были ли использованы за последнюю неделю (по сессиям)? Если скилл ни разу не упоминался — отметить
 5. **Противоречия** — быстрый скан CLAUDE.md на конфликтующие правила (например, два правила которые говорят делать по-разному)
 
